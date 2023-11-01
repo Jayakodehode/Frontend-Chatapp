@@ -16,7 +16,7 @@ function App() {
           <Route path="/Frontend-Chatapp/login" element={<Login />} />
           <Route path="/Frontend-Chatapp/setAvatar" element={<SetAvatar />} />
           <Route path="/Frontend-Chatapp/" element={<Chat />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path={"*"} element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
