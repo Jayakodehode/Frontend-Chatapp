@@ -10,12 +10,12 @@ import "./App.css";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Frontend-Chatapp">
         <Routes>
-          <Route path="/Frontend-Chatapp/register" element={<Register />} />
-          <Route path="/Frontend-Chatapp/login" element={<Login />} />
-          <Route path="/Frontend-Chatapp/setAvatar" element={<SetAvatar />} />
-          <Route path="/Frontend-Chatapp/" element={<Chat />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/setAvatar" element={<SetAvatar />} />
+          <Route path="/" element={<Chat />} />
           <Route path={"*"} element={<NotFound />} />
         </Routes>
       </BrowserRouter>
